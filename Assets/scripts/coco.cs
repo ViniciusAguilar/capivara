@@ -21,7 +21,7 @@ public class coco : MonoBehaviour
     {
         if (gameManager.instance != null)
         {
-            gameManager.instance.AddCoinsAndXp(gameManager.instance.cocoPriceTotal, xpToGive);
+            gameManager.instance.AddCoinsAndXp(gameManager.instance.cocoPriceTotal, xpToGive, xpToGive);
 
         }
         if (moeda != null)

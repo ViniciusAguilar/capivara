@@ -41,6 +41,7 @@ public class capivara : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         choose_new_direction();
         gameManager.instance.cocoPriceTotal = 1;
+        jaEvoluiu = false;
     }
 
     // Update is called once per frame
@@ -61,7 +62,7 @@ public class capivara : MonoBehaviour
             Instantiate(coco, transform.position, Quaternion.identity);
             currentPoopTime = 0;
         }
-        if (jaEvoluiu == false && gameManager.instance.xp >= xpParaEvoluir)
+        if (jaEvoluiu == false && gameManager.instance.xpCapivara >= xpParaEvoluir)
         {
             evoluir_capivara();
         }
